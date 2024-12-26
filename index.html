@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Apresentação - Francis</title>
+    <style>
+      /* Estilos globais */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        color: #333;
+        transition: background-color 0.3s, color 0.3s;
+      }
+
+      /* Tema escuro */
+      body.dark-mode {
+        background-color: #050505;
+        color: #f4f4f4;
+      }
+
+      /* Estilo da barra de navegação */
+      nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #0077b5;
+        color: white;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+      }
+
+      nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        gap: 20px;
+      }
+
+      nav ul li {
+        display: inline;
+      }
+
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        transition: color 0.3s;
+      }
+
+      nav ul li a:hover {
+        color: #ffd700;
+      }
+
+      /* Ícone de alternância de tema */
+      .theme-toggle {
+        background: none;
+        border: none;
+        cursor: pointer;
+        font-size: 1.5rem;
+        color: white;
+        transition: color 0.3s ease;
+      }
+
+      /* Banner */
+      .banner {
+        background-image: url("https://www.lebigdata.fr/wp-content/uploads/2023/11/Amazon-Luna.png");
+        background-size: cover;
+        background-position: center;
+        height: 90vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        text-align: center;
+        margin-top: 60px; /* Compensa a altura da navbar */
+      }
+
+      /* Container do conteúdo */
+      .container {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        padding: 20px 0;
+      }
+
+      h1 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+      }
+
+      p {
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+      }
+
+      /* Ícones de redes sociais */
+      .social-button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        margin: 0 10px;
+        border-radius: 50%;
+        transition: background-color 0.3s;
+      }
+
+      .linkedin {
+        background-color: #000000;
+        color: rgb(213, 220, 230);
+      }
+
+      .linkedin:hover {
+        background-color: #005582;
+      }
+
+      .github {
+        background-color: #000000;
+        color: white;
+      }
+
+      .github:hover {
+        background-color: #1b1b1b;
+      }
+
+      footer {
+        margin-top: 50px;
+        font-size: 0.9rem;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <ul>
+        <li><a href="#quem-sou-eu">Quem Sou Eu</a></li>
+        <li><a href="#redes-sociais">Redes Sociais</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+      </ul>
+      <!-- Botão de alternância de tema -->
+      <button class="theme-toggle" onclick="toggleTheme()">🌞</button>
+    </nav>
+
+    <!-- Banner -->
+    <div class="banner"></div>
+
+    <!-- Seção Quem Sou Eu -->
+    <section id="quem-sou-eu" class="container">
+      <h1>Olá, eu sou Francis!</h1>
+      <p>
+        Sou técnico em mecatrônica em transição para desenvolvedor.
+        <br />
+        Tenho paixão por tecnologia e estou sempre aprendendo sobre novas
+        ferramentas e linguagens de programação.
+      </p>
+      <p>
+        Meu foco principal é construir soluções robustas e escaláveis,
+        utilizando as melhores práticas de desenvolvimento.
+      </p>
+    </section>
+
+    <!-- Seção Redes Sociais -->
+    <section id="redes-sociais" class="container">
+      <h2>Redes Sociais</h2>
+      <div>
+        <a
+          href="https://www.linkedin.com/in/francisnascimento/"
+          class="social-button linkedin"
+          target="_blank"
+        >
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/174/174857.png"
+            alt="LinkedIn"
+            width="30"
+            height="30"
+          />
+        </a>
+        <a
+          href="https://github.com/FrancisNascimentoDev"
+          class="social-button github"
+          target="_blank"
+        >
+          <img
+            src="https://cdn-icons-png.flaticon.com/512/733/733553.png"
+            alt="GitHub"
+            width="30"
+            height="30"
+          />
+        </a>
+      </div>
+    </section>
+
+    <!-- Seção Projetos -->
+    <section id="projetos" class="container">
+      <h2>Projetos</h2>
+      <p>
+        Aqui você encontrará alguns dos projetos em que trabalhei e estou
+        atualmente desenvolvendo.
+      </p>
+
+      <!-- Lista de projetos pode ser adicionada aqui -->
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+      <p>&copy; 2024 FrancisNascimento .Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+      // Função para alternar entre temas claro e escuro
+      function toggleTheme() {
+        document.body.classList.toggle("dark-mode");
+
+        // Seleciona o botão e altera o ícone de lua/sol conforme o tema
+        const themeButton = document.querySelector(".theme-toggle");
+        if (document.body.classList.contains("dark-mode")) {
+          themeButton.textContent = "🌜";
+        } else {
+          themeButton.textContent = "🌞";
+        }
+      }
+    </script>
+  </body>
+</html>
