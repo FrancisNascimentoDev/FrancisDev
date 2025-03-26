@@ -102,6 +102,49 @@
         margin-bottom: 20px;
       }
 
+      /* Estilo dos containers de projeto */
+      .projetos {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        padding: 40px;
+        gap: 20px;
+      }
+
+      .projeto-container {
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        width: 40%;
+        min-width: 280px;
+        transition: transform 0.3s ease;
+      }
+
+      .projeto-container:hover {
+        transform: translateY(-10px);
+      }
+
+      .projeto img {
+        width: 100%;
+        height: auto;
+        border-bottom: 3px solid #ddd;
+      }
+
+      .projeto h2 {
+        font-size: 1.6em;
+        margin: 10px;
+        text-align: center;
+        color: #0077b5;
+      }
+
+      .projeto p {
+        font-size: 1em;
+        padding: 0 15px 20px;
+        text-align: center;
+        color: #666;
+      }
+
       /* Ícones de redes sociais */
       .social-button {
         display: inline-flex;
@@ -201,15 +244,53 @@
     </section>
 
     <!-- Seção Projetos -->
-    <section id="projetos" class="container">
-      <h2>Projetos</h2>
-      <p>
-        Aqui você encontrará alguns dos projetos em que trabalhei e estou
-        atualmente desenvolvendo.
-      </p>
+<section id="projetos" class="container">
+  <h2>Projetos</h2>
+  <p>
+    Aqui você encontrará alguns dos projetos em que trabalhei e estou
+    atualmente desenvolvendo.
+  </p>
 
-      <!-- Lista de projetos pode ser adicionada aqui -->
-    </section>
+  <div class="projetos">
+    <div class="projeto-container">
+      <div class="projeto">
+        <!-- Link para o Projeto 1 -->
+        <a href="https://francisnascimentodev.github.io/GeradorDeSenhasAleatorias" 
+        arget="_blank">
+          <img src="https://private-user-images.githubusercontent.com/148149210/427125914-1b085f51-db5a-4df6-a909-137d01dd2751.jpg?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDMwMDY4NTksIm5iZiI6MTc0MzAwNjU1OSwicGF0aCI6Ii8xNDgxNDkyMTAvNDI3MTI1OTE0LTFiMDg1ZjUxLWRiNWEtNGRmNi1hOTA5LTEzN2QwMWRkMjc1MS5qcGc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjUwMzI2JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI1MDMyNlQxNjI5MTlaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT05MWMwYzVlMmM3MGEzOWJlYzJhZTU3OTRjNjhhNGRiYzZjOWQ5NzA1N2VlYjI4ODFkNGY5MjdhM2IzNzA4YTU3JlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCJ9.nivzj99lGifDma4A3eORONjguKCT1yxmazh93grNXbc" 
+          alt="Projeto 1"
+          width="30"
+          height="30"
+          >
+         
+        </a>
+        <h2>Gerador de Senha</h2>
+        <p>Este projeto tem como objetivo a criação de um Gerador de Senha Aleatória com a possibilidade de alternar entre tema claro e tema escuro. O usuário pode personalizar a senha gerada escolhendo diferentes opções de caracteres (números, símbolos, maiúsculas, minúsculas, etc.) e também pode visualizar a senha gerada com o nível de complexidade.Projeto desenvolvido em  HTML, CSS e JavaScript</p>
+      </div>
+    </div>
+    <div class="projeto-container">
+      <div class="projeto">
+        <!-- Link para o Projeto 2 -->
+        <a href="https://linkdoproyeto2.com" target="_blank">
+          <img src="projeto2.jpg" alt="Projeto 2">
+        </a>
+        <h2>Projeto 2</h2>
+        <p>Descrição do Projeto 2</p>
+      </div>
+    </div>
+    <div class="projeto-container">
+      <div class="projeto">
+        <!-- Link para o Projeto 3 -->
+        <a href="https://linkdoproyeto3.com" target="_blank">
+          <img src="projeto3.jpg" alt="Projeto 3">
+        </a>
+        <h2>Projeto 3</h2>
+        <p>Descrição do Projeto 3</p>
+      </div>
+    </div>
+  </div>
+</section>
+
 
     <!-- Rodapé -->
     <footer>
