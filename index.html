@@ -6,6 +6,39 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Apresentação - Francis</title>
     <style>
+
+       /* Estilo da barra de navegação */
+  nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #0077b5;
+    color: white;
+    display: flex;
+    justify-content: center; /* Centraliza os itens no eixo horizontal */
+    align-items: center; /* Centraliza os itens no eixo vertical */
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+
+  nav ul {
+    display: none; /* Esconde os links da barra de navegação, se necessário */
+  }
+
+  /* Ícone de alternância de tema */
+  .theme-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: white;
+    transition: color 0.3s ease;
+    margin-left: auto; /* Move o botão para o lado direito */
+    margin-right: left; /* Centraliza horizontalmente */
+  }
+
+
       /* Estilos globais */
       body {
         font-family: Arial, sans-serif;
@@ -14,6 +47,10 @@
         background-color: #f4f4f4;
         color: #333;
         transition: background-color 0.3s, color 0.3s;
+      }
+
+      html {
+        color-scheme: ligjt dark;
       }
 
       /* Tema escuro */
@@ -33,7 +70,7 @@
         justify-content: space-between;
         align-items: center;
         padding: 10px 20px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        box-shadow: 21 4px 8px rgba(0, 0, 0, 0.1);
         z-index: 1000;
       }
 
@@ -264,17 +301,40 @@
          
         </a>
         <h2>Gerador de Senha</h2>
-        <p>Este projeto tem como objetivo a criação de um Gerador de Senha Aleatória com a possibilidade de alternar entre tema claro e tema escuro. O usuário pode personalizar a senha gerada escolhendo diferentes opções de caracteres (números, símbolos, maiúsculas, minúsculas, etc.) e também pode visualizar a senha gerada com o nível de complexidade.Projeto desenvolvido em  HTML, CSS e JavaScript</p>
+
+        <p>Este projeto tem como objetivo a criação de um Gerador de Senha Aleatória
+           com a possibilidade de alternar entre tema claro e tema escuro. O usuário
+           pode personalizar a senha gerada escolhendo diferentes opções de caracteres
+            (números, símbolos, maiúsculas, minúsculas, etc.) e também pode visualizar 
+            a senha gerada com o nível de complexidade.<br>
+          <b>Projeto desenvolvido em  HTML, CSS e JavaScript.</b>
+
+            </p>
       </div>
     </div>
     <div class="projeto-container">
       <div class="projeto">
         <!-- Link para o Projeto 2 -->
-        <a href="https://linkdoproyeto2.com" target="_blank">
-          <img src="projeto2.jpg" alt="Projeto 2">
+        <a href="https://github.com/FrancisNascimentoDev/Ponto_Eletronico_API" target="_blank">
+          <img src="https://github.com/user-attachments/assets/c0252eb7-4cd5-4f88-8c9d-34e78f11c38f" alt="Projeto 2">
         </a>
-        <h2>Projeto 2</h2>
-        <p>Descrição do Projeto 2</p>
+        <h2>API de Ponto Eletrônico</h2>
+
+        <p>Esta é uma API RESTful para registro e consulta de pontos eletrônicos de 
+          funcionários. Desenvolvida com Flask e Flask-RESTX, a API oferece 
+          funcionalidades para registrar pontos de entrada e saída, consultar
+          pontos de um usuário específico, atualizar e excluir registros de ponto,
+          além de fornecer documentação interativa usando o Swagger.<br> 
+
+            <b>Tecnologias Utilizadas
+          <br>Flask - Framework web para Python.<br>
+    Flask-RESTX - Extensão do Flask para criar APIs RESTful de forma simples e eficiente.
+    <br>QLite - Banco de dados relacional leve utilizado para armazenamento dos registros
+    de ponto.<br>
+    Swagger - Interface interativa gerada automaticamente para facilitar o uso e a 
+    documentação da API.</b>
+
+        </p>
       </div>
     </div>
     <div class="projeto-container">
